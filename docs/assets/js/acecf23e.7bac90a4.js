@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapuntes_ia=self.webpackChunkapuntes_ia||[]).push([[903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/cibercyl/blog","blogTitle":"Blog","authorsListPath":"/cibercyl/blog/authors"}')}}]);
