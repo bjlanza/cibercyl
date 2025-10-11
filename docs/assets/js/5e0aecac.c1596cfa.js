@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapuntes_ia=self.webpackChunkapuntes_ia||[]).push([[160],{2709:a=>{a.exports=JSON.parse('{"tags":[{"label":"IA","permalink":"/cibercyl/blog/tags/ia","count":1}]}')}}]);

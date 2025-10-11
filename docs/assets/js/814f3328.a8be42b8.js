@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapuntes_ia=self.webpackChunkapuntes_ia||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Bienvenida","permalink":"/blog/bienvenida-blog","unlisted":false,"date":"2025-10-13T00:00:00.000Z"}]}')}}]);
