@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapuntes_ia=self.webpackChunkapuntes_ia||[]).push([[121],{8070:a=>{a.exports=JSON.parse('{"tags":[{"label":"IA","permalink":"/blog/tags/ia","count":1}]}')}}]);

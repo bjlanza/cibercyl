@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapuntes_ia=self.webpackChunkapuntes_ia||[]).push([[947],{6600:a=>{a.exports=JSON.parse('{"authors":[{"name":"Borja Javier Lanza L\xf3pez","title":"CTO Punta de Lanza","url":"https://www.puntadelanza.eu","imageURL":"https://avatars.githubusercontent.com/u/4384524","key":"bjlanza","page":null,"count":1}]}')}}]);
