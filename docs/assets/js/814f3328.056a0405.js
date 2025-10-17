@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkapuntes_ia=globalThis.webpackChunkapuntes_ia||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Bienvenida al Blog de CiberCyL Le\xf3n","permalink":"/blog/bienvenida-blog","unlisted":false,"date":"2025-10-13T00:00:00.000Z"}]}')}}]);
