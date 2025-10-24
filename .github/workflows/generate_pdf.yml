@@ -1,9 +1,8 @@
 # .github/workflows/generate_pdf.yml
 name: Generar Documentación en PDF (Manual)
 
-# Este trigger permite ejecutar el Action manualmente desde la interfaz de GitHub.
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Permite la ejecución manual
 
 jobs:
   build_pdf:
@@ -13,40 +12,33 @@ jobs:
       - name: Checkout del código
         uses: actions/checkout@v4
       
-      # 1. Configurar Node.js (necesario para el CLI de docusaurus-prince-pdf)
+      # 1. Configurar Node.js
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Recomendado, ajusta si es necesario
+          node-version: '20' 
       
       # 2. Instalar docusaurus-prince-pdf
-      # Usamos 'npx' en el paso de ejecución, así que solo instalamos el paquete.
       - name: Instalar docusaurus-prince-pdf
         run: npm install docusaurus-prince-pdf
 
-      # 3. Instalar Prince XML (el motor que hace la conversión real)
+      # 3. Instalar Prince XML
       - name: Instalar Prince XML
         run: |
           echo "Instalando Prince XML..."
-          # Descarga el tarball
           curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
-          # Descomprime
           tar zxf prince-14.2-linux-generic-x86_64.tar.gz
-          # Ejecuta el instalador de forma no interactiva
           cd prince-14.2-linux-generic-x86_64
           yes "" | sudo ./install.sh
           
-      # 4. Construir el PDF
-      # Apuntamos a la URL pública de tu Docusaurus.
+      # 4. Construir el PDF (¡URL corregida!)
       - name: Construir PDF a partir del sitio desplegado
-        run: npx docusaurus-prince-pdf -u https://cibercyl.ciberseguridad.wiki/docs/ 
+        run: npx docusaurus-prince-pdf -u https://cibercyl.ciberseguridad.wiki/docs/intro 
         
-      # 5. Subir el artefacto
-      # El nombre del archivo se genera automáticamente a partir de la URL.
-      # Para 'https://cibercyl.ciberseguridad.wiki/docs/', el nombre es 'cibercyl.ciberseguridad.wiki-docs.pdf'.
+      # 5. Subir el artefacto (¡PATH corregido!)
       - name: Subir el artefacto PDF
         uses: actions/upload-artifact@v4
         with:
           name: documentacion-cibercyl-pdf
-          path: pdf/cibercyl.ciberseguridad.wiki-docs.pdf
+          path: pdf/cibercyl.ciberseguridad.wiki-docs-intro.pdf
           if-no-files-found: error
